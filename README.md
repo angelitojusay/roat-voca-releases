@@ -20,6 +20,14 @@ SHA-256 checksums: [SHA256SUMS.txt](https://github.com/angelitojusay/roat-voca-r
 
 ## What's new
 
+### v1.2.0 (coming in the next release)
+- **Roat's looks, in Roat Voca.** All 36 **Roat Studio Looks** from Roat v1.2.0 are in the Look menu: Clean Contrast, Warm Film, Teal & Amber and Nordic Matte, each for Rec.709 and for the eight camera log spaces. Roat Voca uses Roat's own files, or writes identical ones itself.
+- **Roat's LUT Library, shared.** Your **Roat Mimic Looks** and **My Custom LUTs** are listed too: Roat's `luts` folder and the LUT Library folder set in Roat's Settings (for example `F:\_LUTs`), grouped by pack and camera. Everything is read in place and nothing is copied. **Rescan Roat LUT Library** picks up what Roat has added since. A handoff graded with a Studio Look or a Mimic look arrives with that look selected.
+- **HD Mouth & Teeth Restore** (Visual ADR, MuseTalk, on by default). On a wide smile, MuseTalk's 256 × 256 face leaves the upper teeth grey and soft. Roat Voca now finds the open mouth between the lips in each frame and restores edge detail and the brightness of the teeth inside it only. Lip colour, the cheeks, the beard and the smile lines of **Native Plate Detail** stay exactly as they were. It is built in, with nothing to download.
+- **Roat v1.2.0 parity.** Alloy, Nova, Sky and Isabella join the voices a handoff can name (23 in all), and drop-frame timecode follows Roat's own rules (29.97 and 59.94 only).
+- **Video plates only.** Roat Voca now works from real footage alone. A Talking Presenter or PiP bubble is made from a talking-head clip (`.mp4`, `.mov`, `.mxf`, `.mkv`, `.webm`, `.avi`). Still photos and the built-in studio avatar are gone. A dropped still image is refused with "Roat Voca requires a video plate for Visual ADR".
+- **Support Roat Voca.** A **Buy Me a Coffee** link sits at the foot of the Dock. It opens Roat's page in your browser. Nothing is gated, counted or tracked.
+
 ### v1.1.6
 - **Your own LUT arrives with the handoff.** A `.roatlip` from Roat v1.1.5 or later that was graded with your own `.cube` carries a copy of it beside the manifest (`<clip>.roatlip.cube`). Roat Voca now loads that copy on import, checks it, and selects it in the Look menu, marked **(handoff)**. Built-in camera LUTs are selected on import too. An older handoff without the copy still offers **Locate Handoff .cube…**.
 - **Presenters who move stay in sync.** For a talking-head clip, **Track the Face** (on by default) follows the head from the box you draw on the first frame, so the new mouth and LivePortrait's crop stay on a presenter who sways or walks across the frame. When the clip is shorter than the voiceover and loops, each loop starts where the clip does. The tracker is built in, with nothing to download.
