@@ -2,25 +2,25 @@
 
 **Local Visual ADR (lip re-sync) and talking-presenter studio for Windows, macOS and Linux. The companion app to [Roat](https://github.com/angelitojusay/roat).**
 
-Roat Voca re-syncs a speaker's mouth to new dialogue, and turns a portrait, a talking-head clip or a built-in avatar into a full-frame presenter or a picture-in-picture bubble that speaks your voiceover. Renders, audio analysis and the AI models all run on your computer. There are no accounts and no telemetry, and nothing is uploaded.
+Roat Voca re-syncs a speaker's mouth to new dialogue, and turns a talking-head clip into a full-frame presenter or a picture-in-picture bubble that speaks your voiceover. Renders, audio analysis and the AI models all run on your computer. There are no accounts and no telemetry, and nothing is uploaded.
 
-**[⬇ Download the latest release](https://github.com/angelitojusay/roat-voca-releases/releases/latest)** · current version **v1.1.6**
+**[⬇ Download the latest release](https://github.com/angelitojusay/roat-voca-releases/releases/latest)** · current version **v1.2.0**
 
 | Platform | Download | |
 |---|---|---|
-| Windows 10/11 (x64) | [Roat-Voca-1.1.6-win-x64.exe](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.1.6/Roat-Voca-1.1.6-win-x64.exe) | Installer |
-| Windows 10/11 (x64) | [Roat-Voca-1.1.6-portable.exe](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.1.6/Roat-Voca-1.1.6-portable.exe) | Portable, no install |
-| macOS, Apple Silicon | [Roat-Voca-1.1.6-mac-arm64.dmg](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.1.6/Roat-Voca-1.1.6-mac-arm64.dmg) · [.zip](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.1.6/Roat-Voca-1.1.6-mac-arm64.zip) | |
-| macOS, Intel | [Roat-Voca-1.1.6-mac-x64.dmg](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.1.6/Roat-Voca-1.1.6-mac-x64.dmg) · [.zip](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.1.6/Roat-Voca-1.1.6-mac-x64.zip) | Draft engines only (see below) |
-| Linux (x64) | [Roat-Voca-1.1.6-linux-x86_64.AppImage](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.1.6/Roat-Voca-1.1.6-linux-x86_64.AppImage) | AppImage |
+| Windows 10/11 (x64) | [Roat-Voca-1.2.0-win-x64.exe](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.2.0/Roat-Voca-1.2.0-win-x64.exe) | Installer |
+| Windows 10/11 (x64) | [Roat-Voca-1.2.0-portable.exe](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.2.0/Roat-Voca-1.2.0-portable.exe) | Portable, no install |
+| macOS, Apple Silicon | [Roat-Voca-1.2.0-mac-arm64.dmg](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.2.0/Roat-Voca-1.2.0-mac-arm64.dmg) · [.zip](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.2.0/Roat-Voca-1.2.0-mac-arm64.zip) | |
+| macOS, Intel | [Roat-Voca-1.2.0-mac-x64.dmg](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.2.0/Roat-Voca-1.2.0-mac-x64.dmg) · [.zip](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.2.0/Roat-Voca-1.2.0-mac-x64.zip) | Draft engines only (see below) |
+| Linux (x64) | [Roat-Voca-1.2.0-linux-x86_64.AppImage](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.2.0/Roat-Voca-1.2.0-linux-x86_64.AppImage) | AppImage |
 
-SHA-256 checksums: [SHA256SUMS.txt](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.1.6/SHA256SUMS.txt). On Windows: `Get-FileHash .\Roat-Voca-1.1.6-win-x64.exe -Algorithm SHA256`.
+SHA-256 checksums: [SHA256SUMS.txt](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.2.0/SHA256SUMS.txt). On Windows: `Get-FileHash .\Roat-Voca-1.2.0-win-x64.exe -Algorithm SHA256`.
 
 **Before you start:** Roat Voca uses Roat's engine, chiefly its ffmpeg. Install [Roat](https://github.com/angelitojusay/roat/releases/latest) first (or have ffmpeg on your `PATH`).
 
 ## What's new
 
-### v1.2.0 (coming in the next release)
+### v1.2.0
 - **Roat's looks, in Roat Voca.** All 36 **Roat Studio Looks** from Roat v1.2.0 are in the Look menu: Clean Contrast, Warm Film, Teal & Amber and Nordic Matte, each for Rec.709 and for the eight camera log spaces. Roat Voca uses Roat's own files, or writes identical ones itself.
 - **Roat's LUT Library, shared.** Your **Roat Mimic Looks** and **My Custom LUTs** are listed too: Roat's `luts` folder and the LUT Library folder set in Roat's Settings (for example `F:\_LUTs`), grouped by pack and camera. Everything is read in place and nothing is copied. **Rescan Roat LUT Library** picks up what Roat has added since. A handoff graded with a Studio Look or a Mimic look arrives with that look selected.
 - **HD Mouth & Teeth Restore** (Visual ADR, MuseTalk, on by default). On a wide smile, MuseTalk's 256 × 256 face leaves the upper teeth grey and soft. Roat Voca now finds the open mouth between the lips in each frame and restores edge detail and the brightness of the teeth inside it only. Lip colour, the cheeks, the beard and the smile lines of **Native Plate Detail** stay exactly as they were. It is built in, with nothing to download.
@@ -34,7 +34,7 @@ SHA-256 checksums: [SHA256SUMS.txt](https://github.com/angelitojusay/roat-voca-r
 
 ### v1.1.5
 - **Load Custom .cube...** in the Look menu grades with any 3D `.cube` LUT (2 to 65 points). The whole file is checked before it is used. A Roat handoff graded with your own LUT can be pointed at its `.cube` once with **Locate Handoff .cube…**.
-- **Talking-head clips as presenters.** `.mp4`, `.mov`, `.webm` and `.mkv` clips play along with the voiceover (and loop when shorter), next to `.png`, `.jpg` and `.webp` stills. LivePortrait reads every frame of the clip and smooths the mouth from frame to frame.
+- **Talking-head clips as presenters.** `.mp4`, `.mov`, `.webm` and `.mkv` clips play along with the voiceover (and loop when shorter), next to `.png`, `.jpg` and `.webp` stills (stills were removed in v1.2.0: video plates only). LivePortrait reads every frame of the clip and smooths the mouth from frame to frame.
 
 ### v1.1.4
 - **Eight camera LUTs, the same as Roat's:** ARRI LogC3, RED Log3G10, DJI D-Log and Panasonic V-Log join Sony S-Log3 (S-Gamut3.Cine, S-Gamut3) and Canon C-Log2 / C-Log3, each to Rec.709.
@@ -74,10 +74,11 @@ SHA-256 checksums: [SHA256SUMS.txt](https://github.com/angelitojusay/roat-voca-r
   - Draw the box once on the In point; it follows the face through the shot.
   - Add an **Out-point box** for push-ins and big moves.
 - **Native Plate Detail:** only the mouth and jaw are replaced, and the smile lines blend with the new mouth. The nose, eyes, glasses and outer cheeks stay the original footage.
+- **HD Mouth & Teeth Restore:** crisper teeth and inner-lip edges on wide smiles, inside the open mouth only.
 - **Speech-gated:** silent frames stay the original picture, and an `.srt` / `.vtt` can limit the change to its spoken lines.
 
 ### Talking Presenter and PiP
-- **What it animates:** a still portrait, a talking-head clip, or the built-in studio avatar, speaking the handoff's audio.
+- **What it animates:** a talking-head clip (`.mp4`, `.mov`, `.mxf`, `.mkv`, `.webm`, `.avi`), speaking the handoff's audio. Roat Voca works from real video only: no still photos and no synthetic avatar.
 - **The engine:** **LivePortrait** on DirectML, CUDA or Core ML, or the Deterministic Draft.
 - **Clips:** the face is tracked as the head moves, and the clip loops under a longer line.
 - **Layouts:**
@@ -86,6 +87,7 @@ SHA-256 checksums: [SHA256SUMS.txt](https://github.com/angelitojusay/roat-voca-r
 
 ### Looks and the Roat handoff
 - **Eight built-in camera LUTs**, the same cubes as Roat's: Sony S-Log3 ×2, Canon C-Log2 / C-Log3, ARRI LogC3, RED Log3G10, DJI D-Log and Panasonic V-Log, each to Rec.709.
+- **Roat Studio Looks** (36), **Roat Mimic Looks** and **My Custom LUTs** from Roat's LUT library, read in place.
 - **Your own `.cube` LUTs.**
 - **One-click handoff from Roat:**
   - In Roat, use **Studio → Deliverables → Export .roatlip**.
