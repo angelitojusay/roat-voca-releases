@@ -4,21 +4,28 @@
 
 Roat Voca re-syncs a speaker's mouth to new dialogue, and turns a talking-head clip into a full-frame presenter or a picture-in-picture bubble that speaks your voiceover. Renders, audio analysis and the AI models all run on your computer. There are no accounts and no telemetry, and nothing is uploaded.
 
-**[⬇ Download the latest release](https://github.com/angelitojusay/roat-voca-releases/releases/latest)** · current version **v1.2.0**
+**[⬇ Download the latest release](https://github.com/angelitojusay/roat-voca-releases/releases/latest)** · current version **v1.2.1**
 
 | Platform | Download | |
 |---|---|---|
-| Windows 10/11 (x64) | [Roat-Voca-1.2.0-win-x64.exe](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.2.0/Roat-Voca-1.2.0-win-x64.exe) | Installer |
-| Windows 10/11 (x64) | [Roat-Voca-1.2.0-portable.exe](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.2.0/Roat-Voca-1.2.0-portable.exe) | Portable, no install |
-| macOS, Apple Silicon | [Roat-Voca-1.2.0-mac-arm64.dmg](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.2.0/Roat-Voca-1.2.0-mac-arm64.dmg) · [.zip](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.2.0/Roat-Voca-1.2.0-mac-arm64.zip) | |
-| macOS, Intel | [Roat-Voca-1.2.0-mac-x64.dmg](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.2.0/Roat-Voca-1.2.0-mac-x64.dmg) · [.zip](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.2.0/Roat-Voca-1.2.0-mac-x64.zip) | Draft engines only (see below) |
-| Linux (x64) | [Roat-Voca-1.2.0-linux-x86_64.AppImage](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.2.0/Roat-Voca-1.2.0-linux-x86_64.AppImage) | AppImage |
+| Windows 10/11 (x64) | [Roat-Voca-1.2.1-win-x64.exe](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.2.1/Roat-Voca-1.2.1-win-x64.exe) | Installer |
+| Windows 10/11 (x64) | [Roat-Voca-1.2.1-portable.exe](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.2.1/Roat-Voca-1.2.1-portable.exe) | Portable, no install |
+| macOS, Apple Silicon | [Roat-Voca-1.2.1-mac-arm64.dmg](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.2.1/Roat-Voca-1.2.1-mac-arm64.dmg) · [.zip](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.2.1/Roat-Voca-1.2.1-mac-arm64.zip) | |
+| macOS, Intel | [Roat-Voca-1.2.1-mac-x64.dmg](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.2.1/Roat-Voca-1.2.1-mac-x64.dmg) · [.zip](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.2.1/Roat-Voca-1.2.1-mac-x64.zip) | Draft engines only (see below) |
+| Linux (x64) | [Roat-Voca-1.2.1-linux-x86_64.AppImage](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.2.1/Roat-Voca-1.2.1-linux-x86_64.AppImage) | AppImage |
 
-SHA-256 checksums: [SHA256SUMS.txt](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.2.0/SHA256SUMS.txt). On Windows: `Get-FileHash .\Roat-Voca-1.2.0-win-x64.exe -Algorithm SHA256`.
+SHA-256 checksums: [SHA256SUMS.txt](https://github.com/angelitojusay/roat-voca-releases/releases/download/v1.2.1/SHA256SUMS.txt). On Windows: `Get-FileHash .\Roat-Voca-1.2.1-win-x64.exe -Algorithm SHA256`.
 
 **Before you start:** Roat Voca uses Roat's engine, chiefly its ffmpeg. Install [Roat](https://github.com/angelitojusay/roat/releases/latest) first (or have ffmpeg on your `PATH`).
 
 ## What's new
+
+### v1.2.1
+- **Frame-accurate playhead.** **← / →** step the monitor exactly one frame (**Shift**: one second) in the **Original**, **Re-Synced** and **Split** views, also while the player has focus. Hold the key to keep stepping. Pausing holds the frame that was on screen, so the next step starts from the picture you see. While playing, Split's position follows every frame shown.
+- **The clip's real frame rate.** On import, Roat Voca reads the camera clip's frame rate with Roat's ffprobe, so steps land on the right frame at 23.976, 29.97 and 59.94 as well as 24, 25, 30, 50 and 60.
+- **Frame readout in Split.** The Before / After transport reads `HH:MM:SS:FF`, and its slider moves one frame at a time.
+- **Arrow keys stay where you put them.** With the Mouth ROI box or the Before / After wipe divider focused, the arrows still nudge the box or move the wipe, and never step the frame.
+- Matches **Roat v1.2.1**'s frame-accurate playhead.
 
 ### v1.2.0
 - **Roat's looks, in Roat Voca.** All 36 **Roat Studio Looks** from Roat v1.2.0 are in the Look menu: Clean Contrast, Warm Film, Teal & Amber and Nordic Matte, each for Rec.709 and for the eight camera log spaces. Roat Voca uses Roat's own files, or writes identical ones itself.
@@ -57,7 +64,7 @@ SHA-256 checksums: [SHA256SUMS.txt](https://github.com/angelitojusay/roat-voca-r
 ### The Studio
 - **One window:**
   - the Dock on the left (five Quick Recipes and four Studio Tools);
-  - the Monitor in the middle, with a **Before / After split-wipe**, the face box you drag, and Space to play;
+  - the Monitor in the middle, with a **Before / After split-wipe**, the face box you drag, Space to play and ← / → to step one frame;
   - the Inspector on the right, with every setting;
   - the drawer below, with the **Batch Queue**, the **Transcript** (the handoff's captions) and your **Deliverables**.
 - **Quick Recipes** set up a whole job in one click: **Visual ADR Re-Sync**, **Kokoro Dubbed Lip-Sync**, **Talking Presenter (16:9)**, **Circular PiP Explainer Bubble** and **Transparent PiP Overlay**.
